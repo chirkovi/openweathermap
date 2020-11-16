@@ -37,11 +37,11 @@ def print_temperature(temp_dict, max_temp_dict):
     print("Average temperature")
     for day, temp in temp_dict.items():
         temp = statistics.mean(temp)
-        print(day, temp)
+        print(day, '{0:.{1}f}'.format(temp, 2))
     print("\nMorning temperature")
     for day, max_temp in max_temp_dict.items():
         max_temp = statistics.mean(max_temp)
-        print(day, max_temp)
+        print(day, '{0:.{1}f}'.format(temp, 2))
 
 
 if __name__ == "__main__":
